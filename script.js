@@ -11,6 +11,6 @@ document.getElementById('kirim-wa').addEventListener('click', function() {
     });
 
     const encodedPesan = encodeURIComponent(pesan);
-    const whatsappUrl = `https://wa.me/6281234567890?text=${encodedPesan}`;
+    const whatsappUrl = `https://wa.me/6285176960858?text=${encodedPesan}`;
     window.open(whatsappUrl, '_blank');
 });
