@@ -1,6 +1,14 @@
 document.getElementById('kirim-wa').addEventListener('click', function() {
+    const nama = document.getElementById('nama').value;
+    const alamat = document.getElementById('alamat').value;
+
+    if (!nama || !alamat) {
+        alert('Mohon isi nama pemesan dan alamat.');
+        return;
+    }
+
     const produkCheckboxes = document.querySelectorAll('.produk-checkbox');
-    let pesan = 'Saya ingin memesan produk berikut:\n\n';
+    let pesan = `Nama Pemesan: ${nama}\nAlamat: ${alamat}\n\nSaya ingin memesan produk berikut:\n\n`;
 
     produkCheckboxes.forEach(function(checkbox) {
         if (checkbox.checked) {
@@ -11,6 +19,6 @@ document.getElementById('kirim-wa').addEventListener('click', function() {
     });
 
     const encodedPesan = encodeURIComponent(pesan);
-    const whatsappUrl = `https://wa.me/6285176960858?text=${encodedPesan}`;
+    const whatsappUrl = `https://wa.me/6281234567890?text=${encodedPesan}`;
     window.open(whatsappUrl, '_blank');
 });
