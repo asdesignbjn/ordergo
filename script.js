@@ -3,7 +3,7 @@ document.getElementById('kirim-wa').addEventListener('click', function() {
     const alamat = document.getElementById('alamat').value;
 
     if (!nama || !alamat) {
-        alert('Mohon isi nama pemesan dan alamat.');
+        alert('Mohon isi Nama Toko dan Alamat.');
         return;
     }
 
