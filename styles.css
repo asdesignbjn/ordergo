@@ -12,6 +12,35 @@ header {
     text-align: center;
 }
 
+#form-section {
+    padding: 2rem;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+}
+
+#form-section form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#form-section label {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+#form-section input, #form-section textarea {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#form-section textarea {
+    resize: vertical;
+}
+
 #produk-list {
     display: flex;
     flex-wrap: wrap;
