@@ -8,7 +8,7 @@ document.getElementById('kirim-wa').addEventListener('click', function() {
     }
 
     const produkCheckboxes = document.querySelectorAll('.produk-checkbox');
-    let pesan = `Nama Pemesan: ${nama}\nAlamat: ${alamat}\n\nSaya ingin memesan produk berikut:\n\n`;
+    let pesan = `Nama Pemesan: ${nama}\nAlamat: ${alamat}\n\nProduk yang dipesan:\n\n`;
 
     produkCheckboxes.forEach(function(checkbox) {
         if (checkbox.checked) {
@@ -19,6 +19,6 @@ document.getElementById('kirim-wa').addEventListener('click', function() {
     });
 
     const encodedPesan = encodeURIComponent(pesan);
-    const whatsappUrl = `https://wa.me/6285176960858?text=${encodedPesan}`;
+    const whatsappUrl = `https://wa.me/6281234567890?text=${encodedPesan}`;
     window.open(whatsappUrl, '_blank');
 });
